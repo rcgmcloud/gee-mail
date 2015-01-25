@@ -6,13 +6,15 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        console.log(window.geemails[0].sender);
         //i need to generate the array in window.geemails[i]
         var table = document.getElementById("tableBody");
         console.log(tableBody);
-        table.innerHTML = window.geemails[0].sender;
         console.log(table);
-        table.innerHTML = "<tr><td>" + window.geemails[0].sender + "</td><td>" + window.geemails[0].subject + "</td><td>" + window.geemails[0].date +"</td></tr>"
+        //table.innerHTML = "<tr><td>" + window.geemails[0].sender + "</td><td>" + window.geemails[0].subject + "</td><td>" + window.geemails[0].date + "</td></tr>";
+        for (var i = 0; i < window.geemails.length; i++) {
+         table.innerHTML += "<tr><td>" + window.geemails[i].sender + "</td><td>" + window.geemails[i].subject + "</td><td>" + window.geemails[i].date + "</td></tr>" ;
+        };
+
       };
     </script>
 	</head>
