@@ -23,7 +23,6 @@
 }
 table{
 	width:100%;
-	border: 1px solid black;
 }
 thead tr{
 	height: 50px;
@@ -39,4 +38,8 @@ thead tr{
 #dateHEAD{
 	width:20%;
 	background-color: red;
+}
+
+.emailrow:hover{
+background-color: yellow;
 }
