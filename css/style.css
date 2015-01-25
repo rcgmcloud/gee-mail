@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;	
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+	background-color: #FFBB25;
+	padding:5px;
+}
+#inboxcount{
+	background-color: orange;
+	width: 20%;
+	height: 75px;
+	padding: 10px;
+}
+#inboxcount span{
+	width:100%;
+	display:inline-block;
+	text-align: center;
+}
+#emailContainer{
+
+}
+table{
+	width:100%;
+}
+thead tr{
+	height: 50px;
+}
+#senderHEAD{
+	width:20%;
+	background-color: purple;
+}
+#subjectHEAD{
+	width: 60%;
+	background-color: pink;
+}
+#dateHEAD{
+	width:20%;
+	background-color: red;
+}
