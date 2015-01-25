@@ -23,6 +23,7 @@
 }
 table{
 	width:100%;
+	border: 1px solid black;
 }
 thead tr{
 	height: 50px;

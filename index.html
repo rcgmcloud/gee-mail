@@ -5,7 +5,14 @@
     <script>
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser		
+        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+        console.log(window.geemails[0].sender);
+        //i need to generate the array in window.geemails[i]
+        var table = document.getElementById("tableBody");
+        console.log(tableBody);
+        table.innerHTML = window.geemails[0].sender;
+        console.log(table);
+        table.innerHTML = "<tr><td>" + window.geemails[0].sender + "</td><td>" + window.geemails[0].subject + "</td><td>" + window.geemails[0].date +"</td></tr>"
       };
     </script>
 	</head>
@@ -29,16 +36,8 @@
 						</th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<td>George Clooney
-						</td>
-						<td> Bologna
-						</td>
-						<td>Apocolypse
-						</td>
-
-					</tr>
+				<tbody id="tableBody">
+					
 				</tbody>
 			</table>
 		</div>
