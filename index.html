@@ -8,13 +8,14 @@
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
         //i need to generate the array in window.geemails[i]
         var table = document.getElementById("tableBody");
-        console.log(tableBody);
-        console.log(table);
+
         //table.innerHTML = "<tr><td>" + window.geemails[0].sender + "</td><td>" + window.geemails[0].subject + "</td><td>" + window.geemails[0].date + "</td></tr>";
         for (var i = 0; i < window.geemails.length; i++) {
-         table.innerHTML += "<tr class='emailrow'><td>" + window.geemails[i].sender + "</td><td>" + window.geemails[i].subject + "</td><td>" + window.geemails[i].date + "</td></tr>" ;
+         table.innerHTML += "<tr class='emailrow'><td>" + window.geemails[i].sender + "</td><td>" + window.geemails[i].subject + "</td><td>" + window.geemails[i].date + "</td></tr>"
         };
-
+        var rowNumber = document.getElementById("tableBody").rows.length;
+        console.log(rowNumber);
+        inboxNumber.innerHTML = "   " + rowNumber;
       };
     </script>
 	</head>
@@ -23,9 +24,9 @@
 		<img src="/Users/raymondmariano/Documents/gee-mail/pics/cloud_title_1.png">
 		</div>
 		<div class="container" id="inboxrow">
-			<div id="inboxcount">
-			<span>INBOX COUNT: # </span>
-			
+			<div id="inbox">
+				<div id="inboxText">INBOX:</div>
+				<div id = "inboxNumber"> </div>
 				<!-- this is an html comment. for reference -->
 			</div>
 		</div>

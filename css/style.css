@@ -14,18 +14,42 @@
 	position: relative;
 	left:11%;
 }
-#inboxcount{
+#inbox{
 	/*background-color: orange; */
 	width: 20%;
-	height: 50px;
-	padding: 20px;
+	height: 20px;
+	padding: 10px;
 	position:relative;
-	
+	left: 5px;
+	/*background-color: #0693CC;*/
+	margin: 5px;
 }
+
+#inboxText{
+	font-family: Arial;
+	font-weight: bold;
+	color: #08B7FF;
+	float: left;
+	padding-right: 5px;
+}
+
+#inboxNumber{
+	font-family: Arial;
+	font-weight: bold;
+	color: #08B7FF;
+	/*font-size: 15px;*/
+	background-color: white;
+	border-radius: 20px;
+	padding-left: 10px;
+}
+
 #inboxcount span{
 	width:100%;
 	display:inline-block;
 	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	color: #08B7FF;
 }
 #emailContainer{
 	width: 1000px;
@@ -35,7 +59,7 @@
 }
 table{
 	width:100%;
-	/*font-family: koshari;*/
+	font-family: Arial;
 }
 thead tr{
 	height: 50px;
@@ -44,17 +68,23 @@ thead tr{
 	width:20%;
 	background-color: #08B7FF;
 	border-radius:8px;
+	font-size: 20px;
+	color: white;
 
 }
 #subjectHEAD{
 	width: 60%;
 	background-color: #54CEFF;
 	border-radius:8px;
+	font-size: 20px;
+	color: white;
 }
 #dateHEAD{
 	width:20%;
 	background-color: #0693CC;
 	border-radius:8px;
+	font-size: 20px;
+	color: white;
 }
 
 .emailrow:hover{
