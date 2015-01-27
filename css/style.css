@@ -3,15 +3,24 @@
 	margin: 0px;
 	padding: 0px;
 }
-#header{
-	background-color: #FFBB25;
-	padding:5px;
+#title{
+	background-color: #36A8FF;
+	height: 100px;
+}
+#inboxrow{
+	/*background-color: #FFBB25;*/
+	padding:0px;
+	width:1000px;
+	position: relative;
+	left:11%;
 }
 #inboxcount{
-	background-color: orange;
+	/*background-color: orange; */
 	width: 20%;
-	height: 75px;
-	padding: 10px;
+	height: 50px;
+	padding: 20px;
+	position:relative;
+	
 }
 #inboxcount span{
 	width:100%;
@@ -19,27 +28,41 @@
 	text-align: center;
 }
 #emailContainer{
-
+	width: 1000px;
+	position: relative;
+	left: 13%;
+	text-align: center;
 }
 table{
 	width:100%;
+	/*font-family: koshari;*/
 }
 thead tr{
 	height: 50px;
 }
 #senderHEAD{
 	width:20%;
-	background-color: purple;
+	background-color: #08B7FF;
+	border-radius:8px;
+
 }
 #subjectHEAD{
 	width: 60%;
-	background-color: pink;
+	background-color: #54CEFF;
+	border-radius:8px;
 }
 #dateHEAD{
 	width:20%;
-	background-color: red;
+	background-color: #0693CC;
+	border-radius:8px;
 }
 
 .emailrow:hover{
 background-color: yellow;
 }
+
+/*adding custom font*/
+/* @font-face {
+	font-family: 'Koshari'
+	src:('/Library/Fonts/Koshari.ttf');
+} */
