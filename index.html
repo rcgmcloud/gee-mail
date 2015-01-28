@@ -11,17 +11,24 @@
 
         //table.innerHTML = "<tr><td>" + window.geemails[0].sender + "</td><td>" + window.geemails[0].subject + "</td><td>" + window.geemails[0].date + "</td></tr>";
         for (var i = 0; i < window.geemails.length; i++) {
-         table.innerHTML += "<tr class='emailrow'><td>" + window.geemails[i].sender + "</td><td>" + window.geemails[i].subject + "</td><td>" + window.geemails[i].date + "</td></tr>"
+        	table.innerHTML += "<tr class='emailrow'><td>" + window.geemails[i].sender + "</td><td>" + window.geemails[i].subject + "</td><td>" + window.geemails[i].date + "</td></tr>";	
         };
+
+        setInterval(getNewMessage,2000);
+        console.log(getNewMessage);
+        //setInterval(function,2000);
+       	//number counter
         var rowNumber = document.getElementById("tableBody").rows.length;
         console.log(rowNumber);
-        inboxNumber.innerHTML = "   " + rowNumber;
+        inboxNumber.innerHTML = rowNumber;
       };
     </script>
+
+
 	</head>
 	<body>
 		<div id="title">
-		<img src="/Users/raymondmariano/Documents/gee-mail/pics/cloud_title_1.png">
+		<img src="pics/cloud_title_1.png">
 		</div>
 		<div class="container" id="inboxrow">
 			<div id="inbox">

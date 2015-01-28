@@ -20,7 +20,7 @@
 	height: 20px;
 	padding: 10px;
 	position:relative;
-	left: 5px;
+	left: 15px;
 	/*background-color: #0693CC;*/
 	margin: 5px;
 }
@@ -31,13 +31,14 @@
 	color: #08B7FF;
 	float: left;
 	padding-right: 5px;
+	font-size: 20px;
 }
 
 #inboxNumber{
 	font-family: Arial;
 	font-weight: bold;
 	color: #08B7FF;
-	/*font-size: 15px;*/
+	font-size: 20px;
 	background-color: white;
 	border-radius: 20px;
 	padding-left: 10px;
