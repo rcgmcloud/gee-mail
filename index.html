@@ -11,7 +11,7 @@
 
         //table.innerHTML = "<tr><td>" + window.geemails[0].sender + "</td><td>" + window.geemails[0].subject + "</td><td>" + window.geemails[0].date + "</td></tr>";
         for (var i = 0; i < window.geemails.length; i++) {
-        	table.innerHTML += "<tr class='emailrow'><td>" + window.geemails[i].sender + "</td><td>" + window.geemails[i].subject + "</td><td>" + window.geemails[i].date + "</td></tr>";	
+        	table.innerHTML += "<tr onclick='showMessageInWindow("+i+")' class='emailrow'><td>" + window.geemails[i].sender + "</td><td>" + window.geemails[i].subject + "</td><td>" + window.geemails[i].date + "</td></tr>";	
         };
 
         console.log(getNewMessage());
@@ -23,23 +23,43 @@
         console.log(rowNumber);
         inboxNumber.innerHTML = rowNumber;
 
+        var row = document.getElementsByClassName("emailrow");
+
 
       };
+      function showMessageInWindow(whichMessage){
+      	var myWindow = window.open("", "_blank", "width=600, height=300");
+      	var currentMessageObject = window.geemails[whichMessage];
+      	myWindow.document.write("<p>Sender: " + currentMessageObject.sender + "<br/>" + "Subject: " + currentMessageObject.subject + "<br/>" + "Date: " + currentMessageObject.date + "<br/>" + "<br/>" + "<br/>"+ currentMessageObject.body + "</p>");
+
+      }
 
       function NeoMail(){
       	var table = document.getElementById("tableBody");
       	var message = getNewMessage();
       	var content = document.createElement("tr");
+		
 		content.className = "emailrow";
+		currentRowNumber = document.getElementById("tableBody").rows.length + 1;
+		
 		content.innerHTML = "<td>"+ message.sender +"</td><td>"+ message.subject+"</td><td>"+ message.date+"</td>";
 
-		table.appendChild(content);
+		content.onclick = function(currentRowNumber){
+			showMessageInWindow(rowNumber);
+		}
 
+		table.appendChild(content);
+		
 		var rowNumber = document.getElementById("tableBody").rows.length;
         console.log(rowNumber);
         inboxNumber.innerHTML = rowNumber;
 
+		
+
+        window.geemails.push(message);
       };
+
+
     </script>
 
 
