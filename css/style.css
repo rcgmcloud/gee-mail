@@ -3,6 +3,10 @@
 	margin: 0px;
 	padding: 0px;
 }
+
+/*body{
+	background-color: gray;*/
+}
 #title{
 	background-color: #36A8FF;
 	height: 100px;
@@ -61,6 +65,7 @@
 table{
 	width:100%;
 	font-family: Arial;
+	border-spacing: 0px;
 }
 thead tr{
 	height: 50px;
